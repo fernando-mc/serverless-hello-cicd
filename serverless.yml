@@ -1,6 +1,6 @@
 org: fernando
 app: hello-cicd
-service: python-hello-cicd-api
+service: hello-cicd-api
 
 frameworkVersion: ">=1.1.0 <2.0.0"
 
@@ -10,7 +10,7 @@ provider:
 
 functions:
   currentTime:
-    handler: handler.handler
+    handler: handler.endpoint
     events:
       - http:
           path: ping
